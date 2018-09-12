@@ -6,5 +6,6 @@
 #pragma config LVP = OFF
  void main (void)
 {
+     //test
     /* Insert code from pre-lab Q14 to change values on PORTB */
 }
