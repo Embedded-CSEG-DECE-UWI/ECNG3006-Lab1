@@ -5,7 +5,7 @@
 #pragma config WDT = OFF
 #pragma config OSC = HS
 
-void main1(void)
+void main(void)
 {
 
       TRISDbits.TRISD7 = 0; // Set Pin RD7 as an output
