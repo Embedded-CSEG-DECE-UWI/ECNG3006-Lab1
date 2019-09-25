@@ -7,10 +7,10 @@
 void main (void)
 {
 /* Insert code from pre-lab Q14 to change values on PORTB */
-    int i = 1;
+    int q = 1;
     TRISB =0x00;
-    while (i<16) {
-        PORTB = i;
-        i++;
+    while (q<16) {
+        PORTB = q;
+        q++;
     }
 }
