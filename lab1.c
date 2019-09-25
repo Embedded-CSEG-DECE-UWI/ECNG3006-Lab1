@@ -13,7 +13,7 @@
 {
      //test
     /* Insert code from pre-lab Q14 to change values on PORTB */
-     TRISB = 0;
+     PORTAbits.RA3 = 0;
      for (int i =1, i<16,i++)
      {
          PORTB = i;
