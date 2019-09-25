@@ -9,12 +9,12 @@
 	void main (void)
 	{ 
 	    /*Code from Question 14 in Prelab*/ 
-	    int a = 1;               //Declare and initialize variables 
+	    int i = 1;               //Declare and initialize variables 
 	    TRISB = 0;                      //Set PORTB as an output
-	    while (a < 16)
+	    while (i < 16)
 	    {
-	        PORTB = a;           //Assign count to PORTB
-	        a++;                 //Increment count
+	        PORTB = i;           //Assign count to PORTB
+	        i++;                 //Increment count
 	                
 	    }
 	}
