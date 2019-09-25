@@ -9,17 +9,17 @@
 
 
 
- void main (void)
-{
+
+
      //test
-void main()
+void main(void)
 {
-int i=0; 
+unsigned int number=0; 
 TRISB= 0x00;
-while(i<=15)
+while(number<=15)
 {
-PORTB = i;
-i++; 
+PORTB = number;
+number++; 
 }
 }
 
