@@ -1,4 +1,4 @@
-/* Lab 1 first file - ID number 816002558 Group d  */
+/* Lab 1 L01_816007689 -  816007689 Group c  */
 #include <p18f452.h>   
 #include <delays.h>
  /* Set configuration bits for use with PICKit3 and 4MHz oscillator */
@@ -12,12 +12,15 @@
  void main (void)
 {
      //test
-    /* Insert code from pre-lab Q14 to change values on PORTB */
-     TRISB = 0;
-     for (int i =1, i<16,i++)
-     {
-         PORTB = i;
-         void Delay10KTCYx (0x32);
-         
-     }
+void main()
+{
+int i=0; 
+TRISB= 0x00;
+while(i<=15)
+{
+PORTB = i;
+i++; 
 }
+}
+
+   
