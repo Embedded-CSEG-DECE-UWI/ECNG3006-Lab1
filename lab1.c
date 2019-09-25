@@ -18,7 +18,6 @@ int b ;
      for (b=1;  b<16;b++)
      { 
          PORTB = b;
-         b++ ;
         // void Delay10KTCYx(0x32);
          }
 }
