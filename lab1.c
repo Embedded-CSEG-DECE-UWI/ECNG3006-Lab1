@@ -7,18 +7,18 @@
 #pragma config LVP = OFF
 #define XTAL_FREQ 4000000
 
-
-
+int b ;
+ //ADRIAN ASHTON
  void main (void)
 {
+     PORTAbits.RA3 =1 ; 
      //test
     /* Insert code from pre-lab Q14 to change values on PORTB */
      TRISB = 0;
-     for (int i =1, i<16,i++)
-     {
-         PORTB = i;
-         void Delay10KTCYx (0x32);
-         
-     }
+     for (b=1;  b<16;b++)
+     { 
+         PORTB = b;
+         b++ ;
+        // void Delay10KTCYx(0x32);
+         }
 }
- //ADRIAN ASHTON
