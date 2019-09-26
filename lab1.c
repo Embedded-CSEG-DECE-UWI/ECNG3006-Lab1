@@ -7,24 +7,17 @@
 #pragma config LVP = OFF
 #define XTAL_FREQ 4000000
 
-     void breakhere (void)
-     {
-     return;
-     }
-
  void main (void)
 {
      //test
     /* Insert code from pre-lab Q14 to change values on PORTB */
      
      // Create and initialize variables
-     int i = 0; 
+     int i = 0;
      
      // Configuring 
      TRISB = 0b00000000;
      PORTB = 0b00000000;
-     
-     breakhere();
 
      for (i=1;i<16;i++)
      {
