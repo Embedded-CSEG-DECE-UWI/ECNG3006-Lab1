@@ -14,7 +14,7 @@ int a;
      //test
     /* Insert code from pre-lab Q14 to change values on PORTB */
      PORTAbits.RA3 = 0;
-     
+     TRISB = 0;
      for (a =0; a<16; a ++)
      {
          
