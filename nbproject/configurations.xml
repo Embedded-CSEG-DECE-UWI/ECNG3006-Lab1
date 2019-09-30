@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/xlcd_A.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -12,6 +13,18 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lab1.asm</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lab1asm.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/busyxlcd.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/openxlcd.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/putrxlcd.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/putsxlcd.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/readaddr.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/readdata.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/setcgram.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/setddram.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/wcmdxlcd.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/writdata.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -119,7 +132,6 @@
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
-        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
