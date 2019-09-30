@@ -35,7 +35,7 @@ void DelayPORXLCD(void){
      Delay1KTCYx(15);
  }
  
-void init_lcd(void)
+/*void init_lcd(void)
 { 
      OpenXLCD(FOUR_BIT & LINES_5X7);
      while(BusyXLCD());
@@ -44,22 +44,32 @@ void init_lcd(void)
      //WriteCmdXLCD( BLINK_ON );
      //while(BusyXLCD());
      WriteCmdXLCD(SHIFT_DISP_LEFT);
+}*/
+
+void setup (void)
+{
+    DelayPORXLCD();
+    while(BusyXLCD());
+    OpenXLCD(FOUR_BIT & LINES_5X7); 
+    DelayPORXLCD();
+    while(BusyXLCD());
+    SetDDRamAddr(0x00);
+    DelayPORXLCD();    
 }
 
 void main (void)
 {
-    MapNamee();
-    
+    MapNamee();    
     for (MapIndex = 0; MapIndex <= 6; MapIndex++){
         groupName[MapIndex] = getMapChar();
     } 
-    
-    init_lcd();
+    setup();
+    DelayPORXLCD(); 
     while(BusyXLCD());
-    SetDDRamAddr(0x00);
+    SetDDRamAddr(0x40);
     while(BusyXLCD());
     putsXLCD(groupName);
-    while(BusyXLCD());
+    //while(BusyXLCD());
     while (1)
     {}
 }

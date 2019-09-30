@@ -20,7 +20,7 @@ void main (void)
     {
         PORTB = count;  //displays count
         //Nop();
-        Delay10KTCYx (200);
+        //Delay10KTCYx (200);
     }
     
 }

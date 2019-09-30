@@ -9,19 +9,19 @@
 filter			CODE
 
 ;All digits moved into each register are the Hexadecimal conversions of ASCII characters
-MapNamee		movlw		0x4D		;M
+MapNamee		movlw		0x3D		;M
 			movwf		0x480
-			movlw		0x61		;a
+			movlw		0x3D		;a
 			movwf		0x481		
-			movlw		0x70		;p
+			movlw		0x3D		;p
 			movwf		0x482	
-			movlw		0x4E		;N
+			movlw		0x3D		;N
 			movwf		0x483
-			movlw		0x61		;a
+			movlw		0x3D		;a
 			movwf		0x484
-			movlw		0x6D		;m
+			movlw		0x3D		;m
 			movwf		0x485
-			movlw		0x65		;e
+			movlw		0x3D		;e
 			movwf		0x486
 			movlw		0x00		;NULL
 			movwf		0x487
