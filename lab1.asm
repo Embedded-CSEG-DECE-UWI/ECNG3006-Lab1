@@ -3,12 +3,11 @@
 				
 	    		UDATA		0x480
 MapName			RES		8
-			;ENDC
 
 			EXTERN		MapIndex
 filter			CODE
 
-;All digits moved into each register are the Hexadecimal conversions of ASCII characters
+;define mapname inside 8 consecutive reg [2]
 MapNamee		movlw		0x54		;T
 			movwf		0x482
 			movlw		0x61		;a
@@ -25,7 +24,9 @@ MapNamee		movlw		0x54		;T
 			movwf		0x488
 			movlw		0x00		;NULL
 			movwf		0x489
+			return
 
+;asm function
 getMapChar		movlw		0x07
 			cpfsgt		MapIndex, 0
 			goto		getChar

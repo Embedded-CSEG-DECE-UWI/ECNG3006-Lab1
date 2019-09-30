@@ -10,8 +10,8 @@
 #pragma config WDT = OFF
 #pragma config LVP = OFF
 
-unsigned int MapIndex;
-extern char getMapChar(void);
+unsigned int MapIndex;          //access 8-bit unsigned int [2]]
+extern char getMapChar(void);   //called in c
 extern void MapNamee(void);
 extern char MapName;
 char groupName[8];
@@ -65,6 +65,11 @@ void main (void)
 {
     Nop();
     MapNamee();    
+    //for map index less than or equal to 7
+    for (MapIndex = 0; MapIndex <= 7; MapIndex++){
+        groupName[MapIndex] == getMapChar();
+    } 
+    
     setup();
     DelayPORXLCD(); 
     while(BusyXLCD());
