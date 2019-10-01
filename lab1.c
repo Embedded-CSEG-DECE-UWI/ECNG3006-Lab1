@@ -10,12 +10,10 @@
 
  void main (void)
 {
-     int i = 0;
-    //test
-    /* Insert code from pre-lab Q14 to change values on PORTB */
-     TRISB = 0b00000000;
-     PORTB = 0b00000000;
-     for ( i = 0; i < 16; i++){
-         PORTB = i;
-     }
-} 
+     InitLCD();
+     while(BusyXLCD());
+     SetDDRamAddr(0x40);
+     while(BusyXLCD());
+     putrsXLCD("Task 2 rule?");
+     while(1){}
+}
