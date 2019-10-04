@@ -6,7 +6,7 @@
 #pragma config WDT = OFF
 #pragma config LVP = OFF
 
-#define _XTAL_FREQ 4000000 //4Mhz clock
+#define _XTAL_FREQ 4000000 //4Mhz clockk
 
 void DelayFor18TCY(void){
      Nop();
@@ -50,7 +50,7 @@ void LETTHISWORK (void)
 void main(void){
     LETTHISWORK();
         while(BusyXLCD());
-        putrsXLCD("Hello World");
+        putrsXLCD("HELLO WORLD");
         while(BusyXLCD());
         while(1);
 }
