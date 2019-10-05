@@ -13,8 +13,6 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lab1.asm</itemPath>
-      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lab1asm.c</itemPath>
       <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/busyxlcd.c</itemPath>
       <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/openxlcd.c</itemPath>
       <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/putrxlcd.c</itemPath>
@@ -25,6 +23,7 @@
       <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/setddram.c</itemPath>
       <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/wcmdxlcd.c</itemPath>
       <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lcd_A/writdata.c</itemPath>
+      <itemPath>C:/Users/Abigail/MPLABXProjects/3006_take2/lab01/lab1LCD_SDCC.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -43,7 +42,7 @@
         <targetDevice>PIC18F452</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>Simulator</platformTool>
+        <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>C18</languageToolchain>
         <languageToolchainVersion>3.47</languageToolchainVersion>
         <platform>3</platform>
@@ -132,6 +131,7 @@
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
@@ -568,6 +568,54 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
+      <sdcc-config>
+        <property key="V-show-commands-compiler" value="false"/>
+        <property key="Werror" value="false"/>
+        <property key="allow-unsafe-read" value="false"/>
+        <property key="calltree" value="false"/>
+        <property key="debug-ralloc" value="false"/>
+        <property key="debug-xtra14" value="false"/>
+        <property key="debug-xtra16" value="false"/>
+        <property key="denable-peeps" value="false"/>
+        <property key="extended" value="false"/>
+        <property key="gstack" value="false"/>
+        <property key="ivt-loc" value=""/>
+        <property key="no-c-code-in-asm" value="false"/>
+        <property key="no-crt" value="false"/>
+        <property key="no-extended-instr" value="false"/>
+        <property key="no-optimize-goto" value="false"/>
+        <property key="no-pcode-opt" value="false"/>
+        <property key="no-peep" value="false"/>
+        <property key="no-peep-return" value="false"/>
+        <property key="no-xinit-opt" value="false"/>
+        <property key="nodefaultlibs" value="false"/>
+        <property key="nogcse" value="false"/>
+        <property key="noinduction" value="false"/>
+        <property key="noinvariant" value="false"/>
+        <property key="nojtbound" value="false"/>
+        <property key="nolabelopt" value="false"/>
+        <property key="noloopreverse" value="false"/>
+        <property key="nolospre" value="false"/>
+        <property key="nooverlay" value="false"/>
+        <property key="obanksel" value="0"/>
+        <property key="opt-code-size" value="false"/>
+        <property key="opt-code-speed" value="false"/>
+        <property key="optimize-cmp" value="false"/>
+        <property key="optimize-df" value="false"/>
+        <property key="pcode-verbose" value="false"/>
+        <property key="peep-asm" value="false"/>
+        <property key="peep-return" value="false"/>
+        <property key="pno-banksel" value="false"/>
+        <property key="preplace-udata-with" value=""/>
+        <property key="pstack-model" value="small"/>
+        <property key="stack-loc" value=""/>
+        <property key="stack-size14" value=""/>
+        <property key="use-crt" value=""/>
+        <property key="use-non-free" value="true"/>
+        <property key="user-defines" value=""/>
+        <property key="user-includes" value=""/>
+        <property key="verbose" value="false"/>
+      </sdcc-config>
     </conf>
   </confs>
 </configurationDescriptor>

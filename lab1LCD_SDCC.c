@@ -1,21 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <p18f452.h> 
-#include <delays.h>
+#include<p18cxxx.h>
+#include<delays.h>
 #include "xlcd_A.h"
 
 
 /* Set configuration bits for use with PICKit3 and 4MHz oscillator */
-#pragma config OSC = XT
+#pragma config OSC = HS
 #pragma config WDT = OFF
 #pragma config LVP = OFF
 
-unsigned int MapIndex;          //access 8-bit unsigned int [2]]
-extern char getMapChar(void);   //called in c
-extern void MapNamee(void);
-extern char MapName;
-char groupName[8];
+#define _XTAL_FREQ 4000000
 
+
+#define l1  0x00    //addresses of the beginning of line1
+#define l2  0x40    //addresses of the beginning of line2
+#define l3  0x10    //addresses of the beginning of line3
+#define l4  0x50    //addresses of the beginning of line4
+
+const char LCDbuf[20] = "Hello World";
 
 //PreLab Q16a
 void DelayFor18TCY(void)
@@ -35,7 +36,7 @@ void DelayFor18TCY(void)
     Nop();
     Nop();
 }
- 
+
 //PreLab Q16b
 void DelayXLCD (void)
 {
@@ -49,7 +50,7 @@ void DelayPORXLCD (void)
     Delay1KTCYx(15);    
     return;
 }
- 
+
 void setup (void)
 {
     DelayPORXLCD();
@@ -57,26 +58,17 @@ void setup (void)
     OpenXLCD(FOUR_BIT & LINES_5X7); 
     DelayPORXLCD();
     while(BusyXLCD());
-    SetDDRamAddr(0x00);
+    SetDDRamAddr(l1);
     DelayPORXLCD();    
 }
 
 void main (void)
 {
-    Nop();
-    MapNamee();    
-    //for map index less than or equal to 7
-    /*for (MapIndex = 0; MapIndex <= 7; MapIndex++){
-        groupName[MapIndex] == getMapChar();
-    } */
-    
-    setup();
-    DelayPORXLCD(); 
-    while(BusyXLCD());
-    //SetDDRamAddr(0x40);
-    //while(BusyXLCD());
-    putsXLCD(groupName);
+    setup();  
     DelayPORXLCD();
-    while (1) {}
+    while(BusyXLCD());
+    SetDDRamAddr(l2);
+    while(BusyXLCD());
+    putsXLCD(LCDbuf);
+    while(1){}
 }
-
