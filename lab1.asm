@@ -1,6 +1,6 @@
-	#include <p18f452.h>
+
 	LIST p=18F452
-	#asm
+	
 			INCLUDE<p18f452.INC>
 			GLOBAL MapName0
 			GLOBAL getMapChar
@@ -33,9 +33,9 @@ getMapChar		movf 	b'0111',w
 			return
 equal			nop;
 			
-MapIndexGreater	movf b'11111111',w
+MapIndexGreater		movf b'11111111',w
 				return
 			
 
     END 
-	#endasm
+    
