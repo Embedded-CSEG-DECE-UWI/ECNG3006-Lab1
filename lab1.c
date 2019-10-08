@@ -1,4 +1,4 @@
-/* Lab 1 first file - ID number 816002558 Group d  */
+/* Lab 1 first file - ID number 816008425 Group A  */
 #include <p18f452.h>   
 #include <delays.h>
  /* Set configuration bits for use with PICKit3 and 4MHz oscillator */
