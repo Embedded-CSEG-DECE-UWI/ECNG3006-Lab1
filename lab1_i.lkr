@@ -31,15 +31,14 @@ ACCESSBANK NAME=accesssfr  START=0xF80             END=0xFFF          PROTECTED
 DATABANK   NAME=gpr0       START=0x80              END=0x380
 DATABANK   NAME=gpr1       START=0x381             END=0x5FF
 
-  DATABANK   NAME=dbgspr     START= 0x600  END= 0x60C         PROTECTED
-
+DATABANK   NAME=dbgspr     START=0x600   	     END=0x60C           PROTECTED
 
 
 #IFDEF _CRUNTIME
   SECTION    NAME=CONFIG     ROM=config
   #IFDEF _DEBUGDATASTART
-    STACK SIZE=0x80 RAM=gpr1
+    STACK SIZE=0x100 RAM=gpr0
   #ELSE
-
+    STACK SIZE=0x80 RAM=gpr1
   #FI
 #FI

@@ -7,15 +7,23 @@
 #pragma config LVP = OFF
 #define XTAL_FREQ 4000000
 
+void delay(void){
+    int count;
+    for (count =0; count <50; count++){
+       ;
+    }
+}
 
-int i = 0b0000;
  void main (void)
 {
     /* Insert code from pre-lab Q14 to change values on PORTB */
+     int i = 0b0000;
      TRISB = 0b0000;
+     PORTB = 0b0000;
      for (i =0; i<15;i++)
      {
          PORTB = i;
+         delay();
      }
 }
  
