@@ -7,12 +7,6 @@
 #pragma config LVP = OFF
 #define XTAL_FREQ 4000000
 
-void delay(void){
-    int count;
-    for (count =0; count <50; count++){
-       ;
-    }
-}
 
  void main (void)
 {
@@ -23,7 +17,7 @@ void delay(void){
      for (i =0; i<15;i++)
      {
          PORTB = i;
-         delay();
+         Delay10KTCYx(50);
      }
 }
  
