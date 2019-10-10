@@ -8,7 +8,7 @@
 #pragma config LVP = OFF
 #define _XTAL_FREQ 4000000
 
-/********************************************************************
+/*******************************************************************
 *       Function Name:  OpenXLCD                                    *
 *       Return Value:   void                                        *
 *       Parameters:     lcdtype: sets the type of LCD (lines)       *
