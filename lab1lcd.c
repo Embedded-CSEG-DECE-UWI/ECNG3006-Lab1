@@ -22,15 +22,21 @@ void DelayFor18TCY( void )
  Nop();
  Nop();
  Nop();
+ Nop();
+ Nop();
+ Nop();
+ Nop();
+ Nop();
+ Nop();
 }
 void DelayPORXLCD( void )
 {
- Delay1KTCYx(60); //Delay of 15ms
+ Delay1KTCYx(15); //Delay of 15ms
  return;
 }
 void DelayXLCD( void )
 {
- Delay1KTCYx(20); //Delay of 5ms
+ Delay1KTCYx(5); //Delay of 5ms
  return;
 }
 
