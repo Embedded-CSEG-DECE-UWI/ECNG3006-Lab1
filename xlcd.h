@@ -1,6 +1,6 @@
 #ifndef __XLCD_H
 #define __XLCD_H
-#include "p18cxxx.h"
+#include "xc.h"//"p18cxxx.h"
 /* PIC18 XLCD peripheral routines.
  *
  *   Notes:
@@ -67,7 +67,7 @@
 #define LINE_5X10  0b00110100  /* 5x10 characters               */
 #define LINES_5X7  0b00111000  /* 5x7 characters, multiple line */
 
-#define PARAM_SCLASS auto
+#define auto //#define PARAM_SCLASS auto
 #define MEM_MODEL far  /* Change this to near for small memory model */
 
 
@@ -75,17 +75,17 @@
 /* OpenXLCD
  * Configures I/O pins for external LCD
  */
-void OpenXLCD(PARAM_SCLASS unsigned char);
+void OpenXLCD(auto unsigned char);
 
 /* SetCGRamAddr
  * Sets the character generator address
  */
-void SetCGRamAddr(PARAM_SCLASS unsigned char);
+void SetCGRamAddr(auto unsigned char);
 
 /* SetDDRamAddr
  * Sets the display data address
  */
-void SetDDRamAddr(PARAM_SCLASS unsigned char);
+void SetDDRamAddr(auto unsigned char);
 
 /* BusyXLCD
  * Returns the busy status of the LCD
@@ -105,12 +105,12 @@ char ReadDataXLCD(void);
 /* WriteCmdXLCD
  * Writes a command to the LCD
  */
-void WriteCmdXLCD(PARAM_SCLASS unsigned char);
+void WriteCmdXLCD(auto unsigned char);
 
 /* WriteDataXLCD
  * Writes a data byte to the LCD
  */
-void WriteDataXLCD(PARAM_SCLASS char);
+void WriteDataXLCD(auto char);
 
 /* putcXLCD
  * A putc is a write
@@ -120,12 +120,12 @@ void WriteDataXLCD(PARAM_SCLASS char);
 /* putsXLCD
  * Writes a string of characters to the LCD
  */
-void putsXLCD(PARAM_SCLASS char *);
+void putsXLCD(auto char *);
 
 /* putrsXLCD
  * Writes a string of characters in ROM to the LCD
  */
-void putrsXLCD(const rom char *);
+void putrsXLCD(const  char *);
 
 /* User defines these routines according to the oscillator frequency */
 extern void DelayFor18TCY(void);
