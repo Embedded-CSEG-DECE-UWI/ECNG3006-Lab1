@@ -2,7 +2,7 @@
 #include <delays.h>
 #include "xlcd.h"
 
-/********************************************************************
+/*******************************************************************
 *       Function Name:  OpenXLCD                                    *
 *       Return Value:   void                                        *
 *       Parameters:     lcdtype: sets the type of LCD (lines)       *
