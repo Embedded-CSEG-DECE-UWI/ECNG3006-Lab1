@@ -24,7 +24,8 @@ void DelayFor18TCY (void)
      Nop(); 
      Nop(); 
      Nop();
-     return;
+     Nop();
+     Nop();
 }
 
 void DelayXLCD (void)
@@ -32,7 +33,6 @@ void DelayXLCD (void)
     Delay1KTCYx(5);     //Delay of 5ms 
                         //Cycles = (5ms * 4Mhz)/4
                         //Cycles = 5000
-    return;
 }
 
 void DelayPORXLCD (void)
@@ -40,14 +40,13 @@ void DelayPORXLCD (void)
     Delay1KTCYx(15);    //Delay of 15ms
                         //Cycles = (15ms * 4Mhz)/4
                         //Cycles = 15000
-    return;
 }
 
 void lcdSetup (void)
 { 
     OpenXLCD(FOUR_BIT & LINES_5X7);
     while(BusyXLCD());
-    SetDDRamAddr(0x13); 
+    SetDDRamAddr(0x40); 
     while(BusyXLCD()); 
     WriteCmdXLCD(BLINK_ON);
     while(BusyXLCD());
@@ -58,9 +57,7 @@ void lcdSetup (void)
 void main()
 {
     lcdSetup();
-    
-    while(BusyXLCD());
-    putrsXLCD("Hello World!");
+    putrsXLCD("KERSHAWNFRANKLYN");
     while(BusyXLCD());
     while(1);
    
