@@ -7,13 +7,14 @@
 #pragma config LVP = OFF
 #define XTAL_FREQ 4000000
 
+//extern MapIndex ; 
 
+extern unsigned int M12  ;
 
-
-
-     //test
+  void GetMapChar(void)  ;
 void main(void)
 {
+
 unsigned int number=0; 
 TRISB= 0x00;
 while(number<=15)
