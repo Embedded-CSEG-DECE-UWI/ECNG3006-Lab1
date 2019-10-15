@@ -1,60 +1,59 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Wed Oct 02 14:58:07 2019
+Linker Map File - Created Tue Oct 15 11:22:21 2019
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x000006    program   0x00000e
-.code_DelayXLCDFunctions.o       code   0x000014    program   0x00006c
+         .code_putrxlcd.o       code   0x000014    program   0x000060
+           .code___init.o       code   0x000074    program   0x000002
+      .idata_putrxlcd.o_i    romdata   0x000076    program   0x000000
+      .romdata_putrxlcd.o    romdata   0x000076    program   0x000000
+      .idata_putsxlcd.o_i    romdata   0x000076    program   0x000000
+      .romdata_putsxlcd.o    romdata   0x000076    program   0x000000
+      .idata_readaddr.o_i    romdata   0x000076    program   0x000000
+      .romdata_readaddr.o    romdata   0x000076    program   0x000000
+      .idata_readdata.o_i    romdata   0x000076    program   0x000000
+      .romdata_readdata.o    romdata   0x000076    program   0x000000
+      .idata_setcgram.o_i    romdata   0x000076    program   0x000000
+      .romdata_setcgram.o    romdata   0x000076    program   0x000000
+      .idata_setddram.o_i    romdata   0x000076    program   0x000000
+      .romdata_setddram.o    romdata   0x000076    program   0x000000
+      .idata_wcmdxlcd.o_i    romdata   0x000076    program   0x000000
+      .romdata_wcmdxlcd.o    romdata   0x000076    program   0x000000
+      .idata_writdata.o_i    romdata   0x000076    program   0x000000
+      .romdata_writdata.o    romdata   0x000076    program   0x000000
+        .romdata___init.o    romdata   0x000076    program   0x000000
+      .romdata_openxlcd.o    romdata   0x000076    program   0x000000
+      .idata_openxlcd.o_i    romdata   0x000076    program   0x000000
+         .romdata_c018i.o    romdata   0x000076    program   0x000000
+      .romdata_busyxlcd.o    romdata   0x000076    program   0x000000
+.romdata_DelayXLCDFunctions.o    romdata   0x000076    program   0x000000
+       .idata_lab1asm.o_i    romdata   0x000076    program   0x000004
+       .romdata_lab1asm.o    romdata   0x000076    program   0x000000
+         .idata_c018i.o_i    romdata   0x00007a    program   0x000000
+      .idata_busyxlcd.o_i    romdata   0x00007a    program   0x000000
+            .code_c018i.o       code   0x00007a    program   0x000000
+        .idata___init.o_i    romdata   0x00007a    program   0x000000
+.idata_DelayXLCDFunctions.o_i    romdata   0x00007a    program   0x000000
                    .org_0       code   0x000080    program   0x000042
-         .code_openxlcd.o       code   0x0000c2    program   0x0000da
-               _cinit_scn       code   0x00019c    program   0x00009e
-         .code_putrxlcd.o       code   0x00023a    program   0x000070
-          .code_lab1asm.o       code   0x0002aa    program   0x00006e
-         .code_setddram.o       code   0x000318    program   0x00005a
-         .code_setcgram.o       code   0x000372    program   0x00005a
-         .code_writdata.o       code   0x0003cc    program   0x000058
-         .code_wcmdxlcd.o       code   0x000424    program   0x000058
-         .code_putsxlcd.o       code   0x00047c    program   0x000056
-         .code_readdata.o       code   0x0004d2    program   0x000050
-         .code_readaddr.o       code   0x000522    program   0x000050
-         .code_busyxlcd.o       code   0x000572    program   0x000036
-             D10KTCYXCODE       code   0x0005a8    program   0x00002e
-              D1KTCYXCODE       code   0x0005d6    program   0x000020
-                    .code       code   0x0005f6    program   0x000020
-             _startup_scn       code   0x000616    program   0x00001c
-              D10TCYXCODE       code   0x000632    program   0x000016
-           .code___init.o       code   0x000648    program   0x000002
-      .romdata_setddram.o    romdata   0x00064a    program   0x000000
-      .idata_wcmdxlcd.o_i    romdata   0x00064a    program   0x000000
-      .idata_setddram.o_i    romdata   0x00064a    program   0x000000
-      .romdata_wcmdxlcd.o    romdata   0x00064a    program   0x000000
-        .romdata___init.o    romdata   0x00064a    program   0x000000
-      .romdata_setcgram.o    romdata   0x00064a    program   0x000000
-      .idata_setcgram.o_i    romdata   0x00064a    program   0x000000
-      .idata_writdata.o_i    romdata   0x00064a    program   0x000000
-      .romdata_writdata.o    romdata   0x00064a    program   0x000000
-.romdata_DelayXLCDFunctions.o    romdata   0x00064a    program   0x000000
-      .romdata_busyxlcd.o    romdata   0x00064a    program   0x000000
-       .idata_lab1asm.o_i    romdata   0x00064a    program   0x000004
-       .romdata_lab1asm.o    romdata   0x00064a    program   0x000000
-         .romdata_c018i.o    romdata   0x00064a    program   0x000000
-      .idata_openxlcd.o_i    romdata   0x00064a    program   0x000000
-      .romdata_openxlcd.o    romdata   0x00064a    program   0x000000
-      .idata_putrxlcd.o_i    romdata   0x00064a    program   0x000000
-      .romdata_putrxlcd.o    romdata   0x00064a    program   0x000000
-      .idata_putsxlcd.o_i    romdata   0x00064a    program   0x000000
-      .romdata_putsxlcd.o    romdata   0x00064a    program   0x000000
-      .idata_readaddr.o_i    romdata   0x00064a    program   0x000000
-      .romdata_readaddr.o    romdata   0x00064a    program   0x000000
-      .idata_readdata.o_i    romdata   0x00064a    program   0x000000
-      .romdata_readdata.o    romdata   0x00064a    program   0x000000
-         .idata_c018i.o_i    romdata   0x00064e    program   0x000000
-            .code_c018i.o       code   0x00064e    program   0x000000
-        .idata___init.o_i    romdata   0x00064e    program   0x000000
-.idata_DelayXLCDFunctions.o_i    romdata   0x00064e    program   0x000000
-      .idata_busyxlcd.o_i    romdata   0x00064e    program   0x000000
+         .code_openxlcd.o       code   0x0000c2    program   0x0000a6
+          .code_lab1asm.o       code   0x000168    program   0x0000a4
+               _cinit_scn       code   0x00020c    program   0x00009e
+         .code_setddram.o       code   0x0002aa    program   0x000054
+         .code_setcgram.o       code   0x0002fe    program   0x000054
+         .code_writdata.o       code   0x000352    program   0x000052
+         .code_wcmdxlcd.o       code   0x0003a4    program   0x000052
+         .code_readdata.o       code   0x0003f6    program   0x000050
+         .code_readaddr.o       code   0x000446    program   0x000050
+         .code_putsxlcd.o       code   0x000496    program   0x00004e
+.code_DelayXLCDFunctions.o       code   0x0004e4    program   0x00004a
+             D10KTCYXCODE       code   0x00052e    program   0x00002e
+         .code_busyxlcd.o       code   0x00055c    program   0x00002c
+              D1KTCYXCODE       code   0x000588    program   0x000020
+                    .code       code   0x0005a8    program   0x000020
+             _startup_scn       code   0x0005c8    program   0x00001c
  .config_300001_lab1asm.o    romdata   0x300001    program   0x000001
  .config_300003_lab1asm.o    romdata   0x300003    program   0x000001
  .config_300006_lab1asm.o    romdata   0x300006    program   0x000001
@@ -98,74 +97,80 @@ Linker Map File - Created Wed Oct 02 14:58:07 2019
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00064d      
+                            0x000000    0x000079      
+                            0x000080    0x0005e3      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300006    0x300006      
-            1617 out of 33048 program addresses used, program memory utilization is 4%
+            1505 out of 33048 program addresses used, program memory utilization is 4%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                 BusyXLCD   0x000572    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\busyxlcd.c
-                   D10K_1   0x0005b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x0005c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x0005b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x000642    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x00063a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D1K_1   0x0005e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0005e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-             Delay10KTCYx   0x0005a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x000632    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x0005d6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            DelayFor18TCY   0x000014    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
-             DelayPORXLCD   0x000020    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
-                DelayXLCD   0x00002c    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
-                  InitLCD   0x000038    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
+                 BusyXLCD   0x00055c    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\busyxlcd.c
+                   D10K_1   0x00053a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000546    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x000538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D1K_1   0x000594    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000592    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+             Delay10KTCYx   0x00052e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x000588    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            DelayFor18TCY   0x0004e4    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\DelayXLCDFunctions.c
+             DelayPORXLCD   0x000516    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\DelayXLCDFunctions.c
+                DelayXLCD   0x000522    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\DelayXLCDFunctions.c
+                  InitLCD   0x000168    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
                   MapName   0x000080    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
-                 OpenXLCD   0x0000c2    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\openxlcd.c
-             ReadAddrXLCD   0x000522    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\readaddr.c
-             ReadDataXLCD   0x0004d2    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\readdata.c
-             SetCGRamAddr   0x000372    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\setcgram.c
-             SetDDRamAddr   0x000318    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\setddram.c
-             WriteCmdXLCD   0x000424    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\wcmdxlcd.c
-            WriteDataXLCD   0x0003cc    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\writdata.c
-       _D10KTCYXCODE_0010   0x0005b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x0005c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x00063c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x00063e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x000640    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x0005e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0005ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                 OpenXLCD   0x0000c2    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\openxlcd.c
+             ReadAddrXLCD   0x000446    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\readaddr.c
+             ReadDataXLCD   0x0003f6    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\readdata.c
+             SetCGRamAddr   0x0002fe    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setcgram.c
+             SetDDRamAddr   0x0002aa    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setddram.c
+             WriteCmdXLCD   0x0003a4    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\wcmdxlcd.c
+            WriteDataXLCD   0x000352    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\writdata.c
+       _D10KTCYXCODE_0010   0x00053e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00054a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D1KTCYXCODE_0010   0x000598    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x00059e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+       ___return_lbl00000   0x000514    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00001   0x000630    program     static                          
-       ___return_lbl00002   0x000238    program     static                          
-               __config_0   0x300001    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-               __config_1   0x300003    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-               __config_2   0x300006    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-                   __init   0x000648    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-            __zero_memory   0x0005f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                _do_cinit   0x00019c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00001   0x0005e2    program     static                          
+       ___return_lbl00002   0x0002a8    program     static                          
+               __config_0   0x300001    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+               __config_1   0x300003    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+               __config_2   0x300006    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+                   __init   0x000074    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                   __pa_0   0x00005c    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putrxlcd.c
+                   __pa_0   0x000396    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\writdata.c
+                   __pa_0   0x0004d4    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putsxlcd.c
+                   __pa_0   0x000156    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\openxlcd.c
+                   __pa_0   0x000576    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\busyxlcd.c
+                   __pa_0   0x000344    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setcgram.c
+                   __pa_0   0x0002f0    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setddram.c
+                   __pa_0   0x0003e8    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\wcmdxlcd.c
+                   __pa_0   0x000204    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+                   __pa_1   0x000160    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\openxlcd.c
+            __zero_memory   0x0005a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                _do_cinit   0x00020c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x000616    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x00060c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                copy_loop   0x00020e    program     static                          
-            copy_one_byte   0x000214    program     static                          
-                     done   0x000238    program     static                          
-             done_copying   0x000222    program     static                          
+                 _startup   0x0005c8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x0005be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                copy_loop   0x00027e    program     static                          
+            copy_one_byte   0x000284    program     static                          
+                     done   0x0002a8    program     static                          
+             done_copying   0x000292    program     static                          
                   getChar   0x0000b4    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
                getDefault   0x0000be    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
                getMapChar   0x0000a8    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
-                     loop   0x000626    program     static                          
-                   loop_h   0x000604    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_l   0x00060e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                     main   0x0002aa    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-                putrsXLCD   0x00023a    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\putrxlcd.c
-                 putsXLCD   0x00047c    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\putsxlcd.c
-                     test   0x0001b6    program     static                          
-               zero_block   0x000604    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     loop   0x0005d8    program     static                          
+                   loop_h   0x0005b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x0005c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                     main   0x0001a0    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+                putrsXLCD   0x000014    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putrxlcd.c
+                 putsXLCD   0x000496    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putsxlcd.c
+                     test   0x000226    program     static                          
+               zero_block   0x0005b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -237,7 +242,7 @@ Linker Map File - Created Wed Oct 02 14:58:07 2019
                  LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 MapIndex   0x000415       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
+                 MapIndex   0x000415       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                        PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
@@ -343,9 +348,9 @@ Linker Map File - Created Wed Oct 02 14:58:07 2019
                 curr_byte   0x00040e       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x000410       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x000412       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                        i   0x000417       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
+                        i   0x000417       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
                      prom   0x00040b       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   string   0x000401       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
+                   string   0x000401       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
 
 
 
@@ -354,73 +359,78 @@ Linker Map File - Created Wed Oct 02 14:58:07 2019
                 ---------  ---------  ---------  --------- ---------                
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
-            DelayFor18TCY   0x000014    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
-             DelayPORXLCD   0x000020    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
-                DelayXLCD   0x00002c    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
-                  InitLCD   0x000038    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\DelayXLCDFunctions.c
+                putrsXLCD   0x000014    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putrxlcd.c
+                   __pa_0   0x00005c    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putrxlcd.c
+                   __init   0x000074    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                   MapName   0x000080    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
                getMapChar   0x0000a8    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
                   getChar   0x0000b4    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
                getDefault   0x0000be    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1.asm
-                 OpenXLCD   0x0000c2    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\openxlcd.c
-                _do_cinit   0x00019c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x0001b6    program     static                          
-                copy_loop   0x00020e    program     static                          
-            copy_one_byte   0x000214    program     static                          
-             done_copying   0x000222    program     static                          
-                     done   0x000238    program     static                          
-       ___return_lbl00002   0x000238    program     static                          
-                putrsXLCD   0x00023a    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\putrxlcd.c
-                     main   0x0002aa    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-             SetDDRamAddr   0x000318    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\setddram.c
-             SetCGRamAddr   0x000372    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\setcgram.c
-            WriteDataXLCD   0x0003cc    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\writdata.c
-             WriteCmdXLCD   0x000424    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\wcmdxlcd.c
-                 putsXLCD   0x00047c    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\putsxlcd.c
-             ReadDataXLCD   0x0004d2    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\readdata.c
-             ReadAddrXLCD   0x000522    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\readaddr.c
-                 BusyXLCD   0x000572    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\busyxlcd.c
-             Delay10KTCYx   0x0005a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x0005b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x0005b4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x0005b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x0005c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x0005c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay1KTCYx   0x0005d6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0005e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x0005e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x0005e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0005ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x0005f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-               zero_block   0x000604    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_h   0x000604    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                compare_l   0x00060c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                   loop_l   0x00060e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
-                 _startup   0x000616    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x000626    program     static                          
-       ___return_lbl00001   0x000630    program     static                          
-              Delay10TCYx   0x000632    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x00063a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x00063c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x00063e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x000640    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x000642    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                   __init   0x000648    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __config_0   0x300001    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-               __config_1   0x300003    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-               __config_2   0x300006    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
+                 OpenXLCD   0x0000c2    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\openxlcd.c
+                   __pa_0   0x000156    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\openxlcd.c
+                   __pa_1   0x000160    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\openxlcd.c
+                  InitLCD   0x000168    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+                     main   0x0001a0    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+                   __pa_0   0x000204    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+                _do_cinit   0x00020c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000226    program     static                          
+                copy_loop   0x00027e    program     static                          
+            copy_one_byte   0x000284    program     static                          
+             done_copying   0x000292    program     static                          
+                     done   0x0002a8    program     static                          
+       ___return_lbl00002   0x0002a8    program     static                          
+             SetDDRamAddr   0x0002aa    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setddram.c
+                   __pa_0   0x0002f0    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setddram.c
+             SetCGRamAddr   0x0002fe    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setcgram.c
+                   __pa_0   0x000344    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\setcgram.c
+            WriteDataXLCD   0x000352    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\writdata.c
+                   __pa_0   0x000396    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\writdata.c
+             WriteCmdXLCD   0x0003a4    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\wcmdxlcd.c
+                   __pa_0   0x0003e8    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\wcmdxlcd.c
+             ReadDataXLCD   0x0003f6    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\readdata.c
+             ReadAddrXLCD   0x000446    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\readaddr.c
+                 putsXLCD   0x000496    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putsxlcd.c
+                   __pa_0   0x0004d4    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\putsxlcd.c
+            DelayFor18TCY   0x0004e4    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\DelayXLCDFunctions.c
+       ___return_lbl00000   0x000514    program     static                          
+             DelayPORXLCD   0x000516    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\DelayXLCDFunctions.c
+                DelayXLCD   0x000522    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\DelayXLCDFunctions.c
+             Delay10KTCYx   0x00052e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x000538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x00053a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x00053e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000546    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00054a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                 BusyXLCD   0x00055c    program     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\busyxlcd.c
+                   __pa_0   0x000576    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\busyxlcd.c
+              Delay1KTCYx   0x000588    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000592    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x000594    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x000598    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x00059e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x0005a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_h   0x0005b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+               zero_block   0x0005b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                compare_l   0x0005be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                   loop_l   0x0005c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
+                 _startup   0x0005c8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x0005d8    program     static                          
+       ___return_lbl00001   0x0005e2    program     static                          
+               __config_0   0x300001    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+               __config_1   0x300003    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+               __config_2   0x300006    program     static C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
                      SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             DelayCounter2   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
             DelayCounter1   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
-                   string   0x000401       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
+                   string   0x000401       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
                      prom   0x00040b       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                 curr_byte   0x00040e       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x000410       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x000412       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 MapIndex   0x000415       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
-                        i   0x000417       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1-L01_815008434\ECNG3006-Lab1-L01_815008434\lab1asm.c
+                 MapIndex   0x000415       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
+                        i   0x000417       data     extern C:\Users\vasis\Documents\ECNG3006\ECNG3006-Lab1\lab1asm.c
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f452.asm

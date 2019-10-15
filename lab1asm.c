@@ -15,6 +15,19 @@ extern void MapName (void);
 char string[10];
 int i = 0;
 
+void InitLCD (void)
+{
+    OpenXLCD(FOUR_BIT & LINES_5X7);
+    while(BusyXLCD());
+    SetDDRamAddr(0x00);
+    while(BusyXLCD());
+    WriteCmdXLCD( SHIFT_DISP_LEFT );
+    while(BusyXLCD());
+    WriteCmdXLCD( BLINK_ON );
+    while(BusyXLCD());
+    return;
+}
+
  void main (void)
 {
      MapName();

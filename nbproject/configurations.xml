@@ -4,7 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/xlcd_GpE.h</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/xlcd_GpE.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -14,19 +14,19 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/DelayXLCDFunctions.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/busyxlcd.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/lab1asm.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/openxlcd.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/putrxlcd.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/putsxlcd.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/readaddr.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/readdata.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/setcgram.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/setddram.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/wcmdxlcd.c</itemPath>
-      <itemPath>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434/writdata.c</itemPath>
-      <itemPath>lab1.asm</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/lab1.asm</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/lab1asm.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/DelayXLCDFunctions.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/busyxlcd.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/openxlcd.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/putrxlcd.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/putsxlcd.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/readaddr.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/readdata.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/setcgram.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/setddram.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/wcmdxlcd.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/writdata.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -37,6 +37,7 @@
   <sourceRootList>
     <Elem>.</Elem>
     <Elem>../ECNG3006-Lab1-L01_815008434/ECNG3006-Lab1-L01_815008434</Elem>
+    <Elem>../../../../../Program Files (x86)/Microchip/mplabc18/v3.47/h</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
