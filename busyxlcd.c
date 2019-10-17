@@ -1,5 +1,5 @@
 #include <p18cxxx.h>
-#include "xlcd_GpE.h"
+#include <xlcd.h>
 
 /********************************************************************
 *       Function Name:  BusyXLCD                                    *

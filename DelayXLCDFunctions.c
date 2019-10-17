@@ -8,7 +8,7 @@ void DelayFor18TCY(void)
 
     Nop();  Nop();  Nop();  Nop();  Nop();  Nop();  Nop();  Nop();
 
-    Nop();  Nop();  Nop();  Nop();  Nop();  Nop();  Nop();  Nop();
+    Nop();  Nop();
 }
 
 void DelayPORXLCD(void)
