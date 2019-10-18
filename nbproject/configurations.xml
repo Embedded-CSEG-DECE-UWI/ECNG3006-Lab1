@@ -9,23 +9,12 @@
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
-      <itemPath>lab1_i.lkr</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/lab1_i.lkr</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/lab1asm.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/DelayXLCDFunctions.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/lab1.asm</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/openxlcd.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/putrxlcd.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/putsxlcd.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/readaddr.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/readdata.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/setcgram.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/setddram.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/wcmdxlcd.c</itemPath>
-      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/writdata.c</itemPath>
+      <itemPath>C:/Users/vasis/Documents/ECNG3006/ECNG3006-Lab1/lab1.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
